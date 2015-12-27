@@ -1,0 +1,13 @@
+package com.example.yueme;
+
+import android.app.Fragment;
+
+public class PutRequestFragment extends Fragment{
+	
+	@Override
+	public View onCreateView(LayoutInflater inflater, ViewGroup container,
+			Bundle savedInstanceState) {
+		return View.inflate(getActivity(), R.layout.fragment_my_put_request, null);
+	}
+
+}

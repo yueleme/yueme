@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <LinearLayout
+       android:id="@+id/linearlayout1"
+       android:layout_centerVertical="true"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:paddingLeft="16dp" >
+       
+       <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="用户名：" 
+          android:textSize="16sp"/>
+       
+       <EditText
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1.0"
+          android:hint="输入用户名" />
+    
+   </LinearLayout>
+    
+    <LinearLayout
+       android:layout_below="@+id/linearlayout1"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:paddingLeft="16dp" >
+       
+       <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="密码：" 
+          android:textSize="16sp"/>
+       
+       <EditText
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1.0"
+          android:hint="输入密码" />
+    
+   </LinearLayout>
+    
+   
+
+</RelativeLayout>

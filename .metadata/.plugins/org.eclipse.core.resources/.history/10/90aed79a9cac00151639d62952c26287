@@ -1,0 +1,28 @@
+package com.example.yueme;
+
+import java.util.ArrayList;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
+
+public class MyRequestActivity extends Activity{
+	
+	private ArrayList<Fragment> fragments;
+
+	private ViewPager viewPager;
+
+	private TextView tab_game;
+
+	private TextView tab_app;
+
+	private View line;
+	
+	 @Override
+	    protected void onCreate(Bundle savedInstanceState) {
+	        super.onCreate(savedInstanceState);
+	        setContentView(R.layout.activity_my_request);
+	    }
+
+}

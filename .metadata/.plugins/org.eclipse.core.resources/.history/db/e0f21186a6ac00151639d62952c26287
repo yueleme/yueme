@@ -1,0 +1,60 @@
+package com.example.yueme;
+
+import java.util.ArrayList;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
+import android.os.Bundle;
+import android.support.v4.app.FragmentStatePagerAdapter;
+import android.support.v4.view.ViewPager;
+import android.view.View;
+import android.widget.TextView;
+
+public class MyRequestActivity extends FragmentActivity{
+	
+	private ArrayList<Fragment> fragments;
+
+	private ViewPager viewPager;
+
+	private TextView tab_put;//发需求
+
+	private TextView tab_get;//收需求
+
+	private View tab_line;//切换直线
+	
+	 @Override
+	    protected void onCreate(Bundle savedInstanceState) {
+	        super.onCreate(savedInstanceState);
+	        setContentView(R.layout.activity_my_request);
+	    }
+	 
+	
+	 private void initView(){
+		 tab_put = (TextView) findViewById(R.id.tab_put);
+		 tab_put = (TextView) findViewById(R.id.tab_get);
+		 tab_line = findViewById(R.id.tab_line);
+		 
+		 fragments = new ArrayList<Fragment>();
+		 fragments.add(new PutRequestFragment());
+		 fragments.add(new GetRequestFragment());
+		 
+		 tab_line.getLayoutParams().width = getWindowManager().getDefaultDisplay().getWidth()
+					/ fragments.size();;
+		 tab_line.requestLayout();
+		 
+		 viewPager = (ViewPager) findViewById(R.id.viewPager);
+		 viewPager.setAdapter(new FragmentStatePagerAdapter(
+					getSupportFragmentManager()) {
+
+				@Override
+				public int getCount() {
+					return fragments.size();
+				}
+
+				@Override
+				public Fragment getItem(int arg0) {
+					return fragments.get(arg0);
+				}
+			});
+	 }
+
+}
