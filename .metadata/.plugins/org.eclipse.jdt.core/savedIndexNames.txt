@@ -1,6 +1,4 @@
-INDEX VERSION 1.126+F:\modules\yue\yueme\.metadata\.plugins\org.eclipse.jdt.core
-2602375042.index
-2508142959.index
-1815695024.index
-2425922087.index
+INDEX VERSION 1.126+E:\编写的软件\约么\.metadata\.plugins\org.eclipse.jdt.core
 3515282563.index
+1217483868.index
+3908371541.index
