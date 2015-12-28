@@ -1,6 +1,5 @@
 package com.example.yueme;
 
-import com.example.widget.SlidingTabLayout;
 
 import android.app.Activity;
 import android.content.Context;
